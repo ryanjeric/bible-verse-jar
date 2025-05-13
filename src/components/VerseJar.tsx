@@ -49,7 +49,9 @@ const VerseJar: React.FC<VerseJarProps> = ({
     <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md h-full">
       <div className="text-center mb-4">
         <h3 className={`text-xl font-medium ${selectedEmotion.color}`}>
-          {isOpen ? "Your verse for feeling" : "Click jar to receive"}{" "}
+          {isOpen
+            ? "Your verse for feeling"
+            : "Click jar to receive Bible verse for feeling"}{" "}
           <span className="font-bold">
             {selectedEmotion.name.toLowerCase()}
           </span>

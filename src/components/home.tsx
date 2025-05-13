@@ -35,14 +35,13 @@ function Home() {
           />
 
           <div className="grid md:grid-cols-2 gap-6">
-            <VerseJar
-              selectedEmotion={selectedEmotion}
-              onOpenJar={handleOpenJar}
-            />
-
             <VerseDisplay
               selectedEmotion={selectedEmotion}
               isJarOpened={isJarOpened}
+            />
+            <VerseJar
+              selectedEmotion={selectedEmotion}
+              onOpenJar={handleOpenJar}
             />
           </div>
         </div>
